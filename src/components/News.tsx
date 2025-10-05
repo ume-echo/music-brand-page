@@ -68,7 +68,7 @@ const News: React.FC = () => {
           }}
         >
           <img
-            src={process.env.PUBLIC_URL + '/Image_fx_11.png'}
+            src={process.env.PUBLIC_URL + '/news-image.jpeg'}
             alt="フリーBGM/作業用BGM"
             style={{
               position: 'absolute',
