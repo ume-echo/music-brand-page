@@ -5,7 +5,7 @@ import { Box, Typography, List, ListItem, ListItemText, Divider } from '@mui/mat
 import { styled } from '@mui/material/styles';
 
 const BlogHeader = styled(Box)(({ theme }) => ({
-  height: { xs: 200, md: 300 },
+  height: 300,
   backgroundImage: `url(${process.env.PUBLIC_URL}/rainy-image.jpg)`,
   backgroundSize: 'cover',
   backgroundPosition: 'center',
@@ -21,7 +21,7 @@ const BlogPage: React.FC = () => {
   return (
     <Box sx={{ padding: 3 }}>
       <BlogHeader>
-        <Typography variant={{ xs: 'h4', md: 'h2' }} component="h1" gutterBottom>
+        <Typography variant="h2" component="h1" gutterBottom>
           Blog
         </Typography>
       </BlogHeader>
