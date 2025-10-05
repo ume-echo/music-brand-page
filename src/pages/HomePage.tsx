@@ -35,15 +35,15 @@ const HomePage: React.FC = () => {
   };
 
   const images = [
-    { src: '/確率.png.png', alt: '確率' },
-    { src: '/小さな隣人.PNG', alt: '小さな隣人' },
-    { src: '/IMG_8360.PNG', alt: '猫の瞳' },
+    { src: process.env.PUBLIC_URL + '/確率.png.png', alt: '確率' },
+    { src: process.env.PUBLIC_URL + '/小さな隣人.PNG', alt: '小さな隣人' },
+    { src: process.env.PUBLIC_URL + '/IMG_8360.PNG', alt: '猫の瞳' },
   ];
   return (
     <>
-      <Box sx={{ width: '100%', height: '100vh', overflow: 'hidden', position: 'relative' }}>
+      <Box sx={{ width: '100%', height: '100vh', position: 'relative' }}>
         <img
-          src="/IMG_8987.JPG"
+          src={process.env.PUBLIC_URL + "/IMG_8987.JPG"}
           alt="Main Visual"
           style={{
             width: '100%',
@@ -100,7 +100,7 @@ const HomePage: React.FC = () => {
             Movie
           </Typography>
           <Box sx={{ position: 'relative', display: 'inline-block' }}>
-            <img src="/image5.jpeg" alt="Movie Thumbnail" style={{ maxWidth: '100%', height: 'auto', display: 'block' }} />
+            <img src={process.env.PUBLIC_URL + "/image5.jpeg"} alt="Movie Thumbnail" style={{ maxWidth: '100%', height: 'auto', display: 'block' }} />
             <Box
               sx={{
                 position: 'absolute',
@@ -126,7 +126,7 @@ const HomePage: React.FC = () => {
               <CardMedia
                 component="img"
                 sx={{ width: 151 }}
-                image="/new-profile.jpeg"
+                image={process.env.PUBLIC_URL + "/new-profile.jpeg"}
                 alt="Profile"
               />
               <Box sx={{ display: 'flex', flexDirection: 'column' }}>
