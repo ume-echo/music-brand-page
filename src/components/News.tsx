@@ -60,7 +60,7 @@ const News: React.FC = () => {
           sx={{
             p: 2,
             textAlign: 'center',
-            backgroundImage: `url(${process.env.PUBLIC_URL}/Image_fx%20(11).jpg)`,
+            backgroundImage: `url(${process.env.PUBLIC_URL}/Image_fx%20(11).png)`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             color: 'white',

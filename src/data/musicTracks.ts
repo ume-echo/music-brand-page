@@ -36,7 +36,7 @@ export const musicTracks: MusicTrack[] = [
   {
     id: '3',
     title: '確率',
-    image: process.env.PUBLIC_URL + '/確率2.png',
+    image: process.env.PUBLIC_URL + '/確率2.PNG',
     audio: process.env.PUBLIC_URL + '/確率.mp3',
     category: 'original_song',
     content: [
