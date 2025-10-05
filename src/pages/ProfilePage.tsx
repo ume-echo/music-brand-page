@@ -4,7 +4,7 @@ import { Box, Container, Typography } from '@mui/material';
 const ProfilePage: React.FC = () => {
   return (
     <Container maxWidth="md" sx={{ textAlign: 'center', py: { xs: 8, md: 4 } }}>
-      <Typography variant={{ xs: 'h5', md: 'h4' }} component="h1" gutterBottom>
+      <Typography variant="h4" component="h1" gutterBottom>
         Profile
       </Typography>
       <Box
