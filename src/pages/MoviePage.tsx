@@ -29,7 +29,7 @@ const MoviePage: React.FC = () => {
       }}
     >
       <Typography
-        variant={{ xs: 'h4', md: 'h2' }}
+        variant="h2"
         component="h1"
         sx={{
           animation: `${fadeIn} 2s ease-out forwards`,
