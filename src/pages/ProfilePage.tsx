@@ -3,15 +3,15 @@ import { Box, Container, Typography } from '@mui/material';
 
 const ProfilePage: React.FC = () => {
   return (
-    <Container maxWidth="md" sx={{ textAlign: 'center', py: 4 }}>
-      <Typography variant="h4" component="h1" gutterBottom>
+    <Container maxWidth="md" sx={{ textAlign: 'center', py: { xs: 8, md: 4 } }}>
+      <Typography variant={{ xs: 'h5', md: 'h4' }} component="h1" gutterBottom>
         Profile
       </Typography>
       <Box
         component="img"
         sx={{
-          height: 200,
-          width: 200,
+          height: { xs: 150, md: 200 },
+          width: { xs: 150, md: 200 },
           borderRadius: '50%',
           objectFit: 'cover',
           mb: 2,
