@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Box, Typography, Link, Paper, Button } from '@mui/material';
+import { Link as RouterLink } from 'react-router-dom';
 
 const News: React.FC = () => {
   const [showAll, setShowAll] = useState(false);
@@ -41,7 +42,7 @@ const News: React.FC = () => {
         {displayedNews.map((newsItem, index) => (
           <Box key={index} sx={{ mb: 2 }}>
             <Typography variant="body2" color="text.secondary">{newsItem.date}</Typography>
-            <Link href={newsItem.link} underline="hover" color="inherit">
+            <Link component={RouterLink} to={newsItem.link} underline="hover" color="inherit">
               <Typography variant="h6">{newsItem.title}</Typography>
             </Link>
           </Box>
@@ -67,7 +68,7 @@ const News: React.FC = () => {
             textShadow: '2px 2px 4px rgba(0, 0, 0, 0.6)',
           }}
         >
-          <Link href="/music?category=free_bgm" underline="hover" color="inherit">
+          <Link component={RouterLink} to="/music?category=free_bgm" underline="hover" color="inherit">
             <Typography variant="h6">フリーBGM/作業用BGMはこちら</Typography>
           </Link>
         </Paper>
@@ -85,7 +86,7 @@ const News: React.FC = () => {
             textShadow: '2px 2px 4px rgba(0, 0, 0, 0.6)',
           }}
         >
-          <Link href="/music?category=original_song" underline="hover" color="inherit">
+          <Link component={RouterLink} to="/music?category=original_song" underline="hover" color="inherit">
             <Typography variant="h6">オリジナル楽曲はこちら</Typography>
           </Link>
         </Paper>
