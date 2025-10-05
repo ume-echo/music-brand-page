@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/music-brand-page/static/css/main.c685f56a.css",
-    "main.js": "/music-brand-page/static/js/main.5afffcaa.js",
+    "main.js": "/music-brand-page/static/js/main.65c94b28.js",
     "static/js/453.edd62ae1.chunk.js": "/music-brand-page/static/js/453.edd62ae1.chunk.js",
     "static/media/slick.svg": "/music-brand-page/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/music-brand-page/static/media/slick.a4e97f5a2a64f0ab1323.eot",
@@ -9,11 +9,11 @@
     "static/media/slick.woff": "/music-brand-page/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/music-brand-page/index.html",
     "main.c685f56a.css.map": "/music-brand-page/static/css/main.c685f56a.css.map",
-    "main.5afffcaa.js.map": "/music-brand-page/static/js/main.5afffcaa.js.map",
+    "main.65c94b28.js.map": "/music-brand-page/static/js/main.65c94b28.js.map",
     "453.edd62ae1.chunk.js.map": "/music-brand-page/static/js/453.edd62ae1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c685f56a.css",
-    "static/js/main.5afffcaa.js"
+    "static/js/main.65c94b28.js"
   ]
 }
