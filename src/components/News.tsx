@@ -22,7 +22,7 @@ const News: React.FC = () => {
       <Box
         sx={{
           height: 300,
-          backgroundImage: 'url(/news-image.jpeg)',
+          backgroundImage: `url(${process.env.PUBLIC_URL}/news-image.jpeg)`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           display: 'flex',
@@ -60,7 +60,7 @@ const News: React.FC = () => {
           sx={{
             p: 2,
             textAlign: 'center',
-            backgroundImage: "url('/Image_fx%20(11).jpg')",
+            backgroundImage: `url(${process.env.PUBLIC_URL}/Image_fx%20(11).jpg)`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             color: 'white',
@@ -78,7 +78,7 @@ const News: React.FC = () => {
           sx={{
             p: 2,
             textAlign: 'center',
-            backgroundImage: 'url(/Image_fx14.jpg)',
+            backgroundImage: `url(${process.env.PUBLIC_URL}/Image_fx14.jpg)`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             color: 'white',
