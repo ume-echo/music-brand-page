@@ -16,7 +16,7 @@ const MoviePage: React.FC = () => {
   return (
     <Box
       sx={{
-        height: 'calc(100vh - 64px)',
+        height: { xs: 'calc(70vh - 64px)', md: 'calc(100vh - 64px)' },
         backgroundImage: `url(${process.env.PUBLIC_URL}/image5.jpeg)`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
@@ -29,7 +29,7 @@ const MoviePage: React.FC = () => {
       }}
     >
       <Typography
-        variant="h2"
+        variant={{ xs: 'h4', md: 'h2' }}
         component="h1"
         sx={{
           animation: `${fadeIn} 2s ease-out forwards`,
