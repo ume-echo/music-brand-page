@@ -101,7 +101,7 @@ const MusicPage: React.FC = () => {
       </Box>
       {filteredTracks.map((track) => (
         <Paper key={track.id} elevation={3} sx={{ my: 4, p: { xs: 1, md: 2 }, display: { xs: 'block', md: 'flex' }, alignItems: 'flex-start' }}>
-          <Box sx={{ width: { xs: '100%', md: 100 }, height: { xs: 'auto', md: 100 }, mr: { xs: 0, md: 2 }, mb: { xs: 2, md: 0 }, flexShrink: 0 }}>
+          <Box sx={{ width: { xs: '100%', md: 100 }, height: { xs: 150, md: 100 }, mr: { xs: 0, md: 2 }, mb: { xs: 2, md: 0 }, flexShrink: 0 }}>
             <img src={track.image} alt={track.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
           </Box>
           <Box sx={{ width: { xs: '100%', md: '30%' }, mr: { xs: 0, md: 2 }, mb: { xs: 2, md: 0 }, flexShrink: 0 }}>
