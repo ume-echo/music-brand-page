@@ -61,13 +61,25 @@ const News: React.FC = () => {
           sx={{
             p: 2,
             textAlign: 'center',
-            backgroundImage: `url(${process.env.PUBLIC_URL}/Image_fx_11.png)`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
             color: 'white',
             textShadow: '2px 2px 4px rgba(0, 0, 0, 0.6)',
+            position: 'relative', // Added for absolute positioning of img
+            overflow: 'hidden', // Added to contain the absolute img
           }}
         >
+          <img
+            src={process.env.PUBLIC_URL + '/Image_fx_11.png'}
+            alt="フリーBGM/作業用BGM"
+            style={{
+              position: 'absolute',
+              top: 0,
+              left: 0,
+              width: '100%',
+              height: '100%',
+              objectFit: 'cover',
+              zIndex: -1, // Place behind content
+            }}
+          />
           <Link component={RouterLink} to="/music?category=free_bgm" underline="hover" color="inherit">
             <Typography variant="h6">フリーBGM/作業用BGMはこちら</Typography>
           </Link>
