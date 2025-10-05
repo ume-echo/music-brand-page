@@ -111,6 +111,15 @@ const MusicPage: React.FC = () => {
             <audio controls src={track.audio} style={{ width: '100%' }}>
               お使いのブラウザは音声要素をサポートしていません。
             </audio>
+            <Button
+              variant="outlined"
+              size="small"
+              href={process.env.PUBLIC_URL + track.audio}
+              download
+              sx={{ mt: 1 }}
+            >
+              ダウンロード
+            </Button>
           </Box>
           <Box sx={{ flexGrow: 1, display: 'flex', flexDirection: 'column', mt: { xs: 2, md: 0 } }}>
             <Box>
