@@ -6,7 +6,7 @@ import { styled } from '@mui/material/styles';
 
 const BlogHeader = styled(Box)(({ theme }) => ({
   height: 300,
-  backgroundImage: 'url(/rainy-image.jpg)',
+  backgroundImage: `url(${process.env.PUBLIC_URL}/rainy-image.jpg)`,
   backgroundSize: 'cover',
   backgroundPosition: 'center',
   display: 'flex',

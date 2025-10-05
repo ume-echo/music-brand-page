@@ -17,7 +17,7 @@ const MoviePage: React.FC = () => {
     <Box
       sx={{
         height: 'calc(100vh - 64px)',
-        backgroundImage: 'url(/image5.jpeg)',
+        backgroundImage: `url(${process.env.PUBLIC_URL}/image5.jpeg)`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         display: 'flex',

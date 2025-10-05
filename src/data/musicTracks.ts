@@ -59,7 +59,7 @@ export const musicTracks: MusicTrack[] = [
   {
     id: '4',
     title: '猫の瞳',
-    image: process.env.PUBLIC_URL + '/猫の瞳2.png',
+    image: process.env.PUBLIC_URL + '/猫の瞳2.PNG',
     audio: process.env.PUBLIC_URL + '/猫の瞳.mp3',
     category: 'original_song',
     content: [
@@ -82,7 +82,7 @@ export const musicTracks: MusicTrack[] = [
   {
     id: '5',
     title: '小さな隣人',
-    image: process.env.PUBLIC_URL + '/小さな隣人2.png',
+    image: process.env.PUBLIC_URL + '/小さな隣人2.PNG',
     audio: process.env.PUBLIC_URL + '/小さな隣人.mp3',
     category: 'original_song',
     content: [

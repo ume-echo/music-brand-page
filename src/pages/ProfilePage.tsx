@@ -18,7 +18,7 @@ const ProfilePage: React.FC = () => {
           border: '3px solid #add8e6'
         }}
         alt="Profile Image"
-        src="/new-profile.jpeg"
+        src={process.env.PUBLIC_URL + "/new-profile.jpeg"}
       />
       
       <Typography variant="h6" component="h2">
