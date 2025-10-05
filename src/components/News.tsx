@@ -22,7 +22,7 @@ const News: React.FC = () => {
     <Box sx={{ my: 4 }}>
       <Box
         sx={{
-          height: 300,
+          height: { xs: 200, md: 300 },
           backgroundImage: `url(${process.env.PUBLIC_URL}/news-image.jpeg)`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
@@ -34,7 +34,7 @@ const News: React.FC = () => {
           mb: 4,
         }}
       >
-        <Typography variant="h2" component="h1" gutterBottom>
+        <Typography variant={{ xs: 'h4', md: 'h2' }} component="h1" gutterBottom>
           News
         </Typography>
       </Box>
