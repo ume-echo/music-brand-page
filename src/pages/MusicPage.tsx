@@ -53,7 +53,7 @@ const MusicPage: React.FC = () => {
   };
 
   return (
-    <Box sx={{ padding: 3, paddingTop: '100px' }}>
+    <Box sx={{ padding: { xs: 2, md: 3 }, paddingTop: { xs: '80px', md: '100px' } }}>
       <Typography variant="h2" component="h1" gutterBottom>
         Music
       </Typography>
@@ -100,11 +100,11 @@ const MusicPage: React.FC = () => {
         )}
       </Box>
       {filteredTracks.map((track) => (
-        <Paper key={track.id} elevation={3} sx={{ my: 4, p: 2, display: 'flex', alignItems: 'flex-start' }}>
-          <Box sx={{ width: 100, height: 100, mr: 2, flexShrink: 0 }}>
+        <Paper key={track.id} elevation={3} sx={{ my: 4, p: { xs: 1, md: 2 }, display: { xs: 'block', md: 'flex' }, alignItems: 'flex-start' }}>
+          <Box sx={{ width: { xs: '100%', md: 100 }, height: { xs: 'auto', md: 100 }, mr: { xs: 0, md: 2 }, mb: { xs: 2, md: 0 }, flexShrink: 0 }}>
             <img src={track.image} alt={track.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
           </Box>
-          <Box sx={{ width: '30%', mr: 2, flexShrink: 0 }}>
+          <Box sx={{ width: { xs: '100%', md: '30%' }, mr: { xs: 0, md: 2 }, mb: { xs: 2, md: 0 }, flexShrink: 0 }}>
             <Typography variant="h5" component="h2" gutterBottom>
               {track.title}
             </Typography>
@@ -112,7 +112,7 @@ const MusicPage: React.FC = () => {
               お使いのブラウザは音声要素をサポートしていません。
             </audio>
           </Box>
-          <Box sx={{ flexGrow: 1, display: 'flex', flexDirection: 'column' }}>
+          <Box sx={{ flexGrow: 1, display: 'flex', flexDirection: 'column', mt: { xs: 2, md: 0 } }}>
             <Box>
               {track.content
                 .filter((p) => p.startsWith('//'))
