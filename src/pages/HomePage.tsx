@@ -32,6 +32,10 @@ const HomePage: React.FC = () => {
     autoplaySpeed: 3000,
     nextArrow: <ArrowForwardIcon />,
     prevArrow: <ArrowForwardIcon />,
+    responsive: [
+      { breakpoint: 960, settings: { slidesToShow: 2 } },
+      { breakpoint: 600, settings: { slidesToShow: 1 } },
+    ],
   };
 
   const images = [
@@ -41,7 +45,7 @@ const HomePage: React.FC = () => {
   ];
   return (
     <>
-      <Box sx={{ width: '100%', height: '100vh', position: 'relative' }}>
+      <Box sx={{ width: '100%', height: { xs: '60vh', md: '100vh' }, position: 'relative' }}>
         <img
           src={process.env.PUBLIC_URL + "/IMG_8987.JPG"}
           alt="Main Visual"
@@ -122,15 +126,15 @@ const HomePage: React.FC = () => {
         </Box>
         <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 4, mt: 4, mb: 4 }}>
           <Box sx={{ width: '100%' }}>
-            <Card sx={{ display: 'flex', width: '100%' }}>
+            <Card sx={{ display: { xs: 'block', md: 'flex' }, width: '100%' }}>
               <CardMedia
                 component="img"
-                sx={{ width: 151 }}
+                sx={{ width: { xs: '100%', md: 151 } }}
                 image={process.env.PUBLIC_URL + "/new-profile.jpeg"}
                 alt="Profile"
               />
               <Box sx={{ display: 'flex', flexDirection: 'column' }}>
-                <CardContent sx={{ flex: '1 0 auto' }}>
+                <CardContent sx={{ flex: '1 0 auto', mt: { xs: 2, md: 0 } }}>
                   <Typography component="div" variant="h5">
                     Profile
                   </Typography>
