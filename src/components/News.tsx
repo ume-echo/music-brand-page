@@ -34,7 +34,7 @@ const News: React.FC = () => {
           mb: 4,
         }}
       >
-        <Typography variant={{ xs: 'h4', md: 'h2' }} component="h1" gutterBottom>
+        <Typography variant="h2" component="h1" gutterBottom>
           News
         </Typography>
       </Box>
