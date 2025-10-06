@@ -1,3 +1,4 @@
+import { memo } from 'react';
 import { Box, Container, Typography, Chip, Card, CardContent, CardMedia, Button } from '@mui/material';
 import { Link } from 'react-router-dom';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
@@ -6,12 +7,12 @@ import { musicTracks } from '../data/musicTracks';
 const MusicSection: React.FC = () => {
 
   return (
-    <Box sx={{ py: 4 }}>
-      <Container maxWidth="md">
+    <Box sx={{ height: '100%', display: 'flex', flexDirection: 'column', py: 4 }}>
+      <Container maxWidth="md" sx={{ display: 'flex', flexDirection: 'column', flexGrow: 1 }}>
         <Typography variant="h5" component="h2" gutterBottom align="center" sx={{ mb: 4 }}>
           music picup!
         </Typography>
-        <Box sx={{ display: 'block' }}>
+        <Box sx={{ display: 'block', flexGrow: 1 }}>
           {musicTracks.slice(0, 3).map((track) => (
             <Card key={track.id} sx={{ maxWidth: 600, m: 'auto', mb: 4, display: 'flex' }}>
               <CardMedia
@@ -62,4 +63,4 @@ const MusicSection: React.FC = () => {
   );
 };
 
-export default MusicSection;
+export default memo(MusicSection);

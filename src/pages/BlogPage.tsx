@@ -3,10 +3,11 @@ import { Link } from 'react-router-dom';
 import { blogPosts } from '../data/blogPosts';
 import { Box, Typography, List, ListItem, ListItemText, Divider } from '@mui/material';
 import { styled } from '@mui/material/styles';
+import { IMAGE_PATHS } from '../constants/paths';
 
 const BlogHeader = styled(Box)(({ theme }) => ({
   height: 300,
-  backgroundImage: `url(${process.env.PUBLIC_URL}/rainy-image.jpg)`,
+  backgroundImage: `url(${IMAGE_PATHS.RAINY_IMAGE})`,
   backgroundSize: 'cover',
   backgroundPosition: 'center',
   display: 'flex',

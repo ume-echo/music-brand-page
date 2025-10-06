@@ -1,5 +1,6 @@
 import React from 'react';
 import { Box, Typography, keyframes } from '@mui/material';
+import { IMAGE_PATHS } from '../constants/paths';
 
 const fadeIn = keyframes`
   from {
@@ -17,7 +18,7 @@ const MoviePage: React.FC = () => {
     <Box
       sx={{
         height: { xs: 'calc(70vh - 64px)', md: 'calc(100vh - 64px)' },
-        backgroundImage: `url(${process.env.PUBLIC_URL}/image5.jpeg)`,
+        backgroundImage: `url(${IMAGE_PATHS.IMAGE_5})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         display: 'flex',

@@ -10,7 +10,8 @@ import DiscoPage from './pages/DiscoPage';
 import BlogPage from './pages/BlogPage';
 import BlogPostDetail from './pages/BlogPostDetail';
 import TermsPage from './pages/TermsPage'; // 新しく追加
-import LyricsPage from './pages/LyricsPage'; // 歌詞ページをインポート
+import Footer from './components/Footer'; // Footerをインポート
+
 import ContactPage from './pages/ContactPage'; // お問い合わせページをインポート
 import Sidebar from './components/Sidebar'; // Sidebarコンポーネントをインポート
 import ScrollToTopButton from './components/ScrollToTopButton';
@@ -57,11 +58,11 @@ const App: React.FC = () => {
         <Drawer anchor="left" open={drawerOpen} onClose={toggleDrawer(false)}>
           <Sidebar toggleDrawer={toggleDrawer} />
         </Drawer>
-        <Box component="main">
+        <Box component="main" sx={{ flexGrow: 1 }}>
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/music" element={<MusicPage />} />
-            <Route path="/music/:id/lyrics" element={<LyricsPage />} />
+            
             <Route path="/news" element={<NewsPage />} />
             <Route path="/profile" element={<ProfilePage />} />
             <Route path="/movie" element={<MoviePage />} />
@@ -73,6 +74,7 @@ const App: React.FC = () => {
           </Routes>
         </Box>
         <ScrollToTopButton />
+        <Footer />
       </Router>
     </ThemeProvider>
   );

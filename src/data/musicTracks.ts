@@ -1,11 +1,12 @@
 import { MusicTrack } from '../types';
+import { IMAGE_PATHS, AUDIO_PATHS } from '../constants/paths';
 
 export const musicTracks: MusicTrack[] = [
   {
     id: '1',
     title: 'Rainy',
-    image: process.env.PUBLIC_URL + '/rainy-image.jpg',
-    audio: process.env.PUBLIC_URL + '/rainy.mp3',
+    image: IMAGE_PATHS.RAINY_IMAGE,
+    audio: AUDIO_PATHS.RAINY,
     category: 'free_bgm',
     content: [
       '//しっとりとした静けさをイメージした雨の日の午後にぴったりな楽曲です。',
@@ -21,8 +22,8 @@ export const musicTracks: MusicTrack[] = [
   {
     id: '2',
     title: '入道雲',
-    image: process.env.PUBLIC_URL + '/Image_fx (6).jpg', // 仮の画像
-    audio: process.env.PUBLIC_URL + '/入道雲.mp3', // 仮の音声
+    image: IMAGE_PATHS.IMAGE_FX_6, // 仮の画像
+    audio: AUDIO_PATHS.NYUDOGUMO, // 仮の音声
     category: 'free_bgm',
     content: [
       '//空を見上げてください。立ち込める入道雲が夏を感じさせます。',
@@ -36,8 +37,8 @@ export const musicTracks: MusicTrack[] = [
   {
     id: '3',
     title: '確率',
-    image: process.env.PUBLIC_URL + '/確率2.PNG',
-    audio: process.env.PUBLIC_URL + '/確率.mp3',
+    image: IMAGE_PATHS.KAKURITSU_2,
+    audio: AUDIO_PATHS.KAKURITSU,
     category: 'original_song',
     content: [
       '//偶然の出会いが運命を動かす瞬間を描いた歌です。',
@@ -59,8 +60,8 @@ export const musicTracks: MusicTrack[] = [
   {
     id: '4',
     title: '猫の瞳',
-    image: process.env.PUBLIC_URL + '/猫の瞳2.PNG',
-    audio: process.env.PUBLIC_URL + '/猫の瞳.mp3',
+    image: IMAGE_PATHS.NEKO_NO_HITOMI_2,
+    audio: AUDIO_PATHS.NEKO_NO_HITOMI,
     category: 'original_song',
     content: [
       '//「深い夜の雨が上がったら、あの人に会いに行く。」',
@@ -82,8 +83,8 @@ export const musicTracks: MusicTrack[] = [
   {
     id: '5',
     title: '小さな隣人',
-    image: process.env.PUBLIC_URL + '/小さな隣人2.PNG',
-    audio: process.env.PUBLIC_URL + '/小さな隣人.mp3',
+    image: IMAGE_PATHS.CHIISANA_RINJIN_2,
+    audio: AUDIO_PATHS.CHIISANA_RINJIN,
     category: 'original_song',
     content: [
       '//「少し寂しい夜もあの子のことを思い出すと気持ちが和らぐの。」',
@@ -105,8 +106,8 @@ export const musicTracks: MusicTrack[] = [
   {
     id: '6',
     title: 'Parade',
-    image: process.env.PUBLIC_URL + '/Image_fx15.jpg', // 仮の画像
-    audio: process.env.PUBLIC_URL + '/Parade.mp3', // 仮の音声
+    image: IMAGE_PATHS.IMAGE_FX_15, // 仮の画像
+    audio: AUDIO_PATHS.PARADE, // 仮の音声
     category: 'free_bgm',
     content: [
       '//軽やかな曲調は明日への第一歩',
@@ -120,8 +121,8 @@ export const musicTracks: MusicTrack[] = [
   {
     id: '7',
     title: 'twinkle',
-    image: process.env.PUBLIC_URL + '/twinkle.jpg',
-    audio: process.env.PUBLIC_URL + '/twinkle.mp3',
+    image: IMAGE_PATHS.TWINKLE,
+    audio: AUDIO_PATHS.TWINKLE,
     category: 'free_bgm',
     content: [
       '//フリーBGM、作業用BGMとしてお使いください。',

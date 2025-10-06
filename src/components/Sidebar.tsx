@@ -32,7 +32,7 @@ const Sidebar: React.FC<SidebarProps> = ({ toggleDrawer }) => {
         </ListItem>
         <ListItem disablePadding>
           <ListItemButton component={Link} to="/music">
-            <ListItemText primary="MUSIC" />
+            <ListItemText primary="Music/BGM" />
           </ListItemButton>
         </ListItem>
         <ListItem disablePadding>
@@ -42,7 +42,7 @@ const Sidebar: React.FC<SidebarProps> = ({ toggleDrawer }) => {
         </ListItem>
         <ListItem disablePadding>
           <ListItemButton component={Link} to="/disco">
-            <ListItemText primary="DISCOGRAPHY" />
+            <ListItemText primary="Disco/Works" />
           </ListItemButton>
         </ListItem>
         <ListItem disablePadding>

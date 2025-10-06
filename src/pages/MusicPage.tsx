@@ -114,7 +114,7 @@ const MusicPage: React.FC = () => {
             <Button
               variant="outlined"
               size="small"
-              href={process.env.PUBLIC_URL + track.audio}
+              href={track.audio}
               download
               sx={{ mt: 1 }}
             >
@@ -138,13 +138,7 @@ const MusicPage: React.FC = () => {
                   <Chip key={index} label={tag} sx={{ mr: 1, mt: 1 }} />
                 ))}
             </Box>
-            {track.category === 'original_song' && track.lyrics && (
-              <Box sx={{ mt: 2 }}>
-                <Button component={Link} to={`/music/${track.id}/lyrics`} variant="contained">
-                  歌詞を見る
-                </Button>
-              </Box>
-            )}
+            
           </Box>
         </Paper>
       ))}
