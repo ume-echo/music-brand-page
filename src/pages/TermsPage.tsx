@@ -13,7 +13,7 @@ const TermsPage: React.FC = () => {
           利用規約
         </Typography>
         <Typography variant="body1" paragraph>
-          umeが提供するフリーBGM/作業用BGMは、以下の利用規約に従ってご利用いただけます。 AIによる自動生成音源であり、著作権は発生せず自由利用できますが当方指定の禁止事項にご注意ください。
+          umeが提供する楽曲は、以下の利用規約に従ってご利用いただけます。公開中の楽曲は利用規約の範囲内ですべて無料でご利用いただけます。ダウンロードする前に以下の利用規約をご確認ください。
         </Typography>
 
         <Typography variant="h6" component="h3" gutterBottom>
@@ -35,6 +35,7 @@ const TermsPage: React.FC = () => {
             <li>音源の二次配布、販売、自作発言は禁止します。</li>
             <li>公序良俗に反するコンテンツ、違法なコンテンツでの利用は禁止します。</li>
             <li>特定の個人や団体を誹謗中傷する目的での利用は禁止します。</li>
+            <li>その他umeに不利益が生じる行為は禁止します。</li>
           </ul>
         </Typography>
 
@@ -42,7 +43,7 @@ const TermsPage: React.FC = () => {
           3. 著作権
         </Typography>
         <Typography variant="body1" paragraph>
-          フリーBGM/作業用BGMの著作権については当方が本サービスで提供する楽曲について、著作権は発生しません。利用者は、当方の定めたルールのもと楽曲を自由に利用できます。オリジナル音源（歌詞が含まれる音源）については音源の著作権はumeに帰属します。クレジット表記は任意ですが、記載していただけると大変励みになります。（例: BGM: ume）
+          当方が本サービスで提供する楽曲について、フリー、著作権フリーと題していますが著作権を放棄しているわけではなく著作権はumeに帰属します。利用者は、当方の定めたルールのもと楽曲を自由にご利用いただけます。クレジット表記は任意ですが、記載していただけると大変励みになります。<br />（クレジット表記の例　BGM：ume　https://ume-echo.github.io/music-brand-page/#/）
         </Typography>
 
         <Typography variant="h5" component="h2" gutterBottom sx={{ mt: 4 }}>

@@ -55,6 +55,11 @@ const Sidebar: React.FC<SidebarProps> = ({ toggleDrawer }) => {
             <ListItemText primary="利用規約" />
           </ListItemButton>
         </ListItem>
+        <ListItem disablePadding>
+          <ListItemButton component={Link} to="/contact">
+            <ListItemText primary="お問い合わせ" />
+          </ListItemButton>
+        </ListItem>
       </List>
       <Divider />
       {/* 必要に応じてここに他のメニュー項目を追加 */}

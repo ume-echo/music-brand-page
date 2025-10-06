@@ -11,6 +11,7 @@ import BlogPage from './pages/BlogPage';
 import BlogPostDetail from './pages/BlogPostDetail';
 import TermsPage from './pages/TermsPage'; // 新しく追加
 import LyricsPage from './pages/LyricsPage'; // 歌詞ページをインポート
+import ContactPage from './pages/ContactPage'; // お問い合わせページをインポート
 import Sidebar from './components/Sidebar'; // Sidebarコンポーネントをインポート
 import ScrollToTopButton from './components/ScrollToTopButton';
 import { createTheme, ThemeProvider, CssBaseline, Drawer, Box } from '@mui/material';
@@ -68,6 +69,7 @@ const App: React.FC = () => {
             <Route path="/blog" element={<BlogPage />} />
             <Route path="/blog/:id" element={<BlogPostDetail />} />
             <Route path="/terms" element={<TermsPage />} />
+            <Route path="/contact" element={<ContactPage />} />
           </Routes>
         </Box>
         <ScrollToTopButton />
