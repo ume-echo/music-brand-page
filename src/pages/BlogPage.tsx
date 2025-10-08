@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { blogPosts } from '../data/blogPosts';
 import { Box, Typography, List, ListItem, ListItemText, Divider } from '@mui/material';
 import { styled } from '@mui/material/styles';
@@ -32,7 +31,13 @@ const BlogPage: React.FC = () => {
           .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
           .map((post) => (
           <React.Fragment key={post.id}>
-            <ListItem component={Link} to={`/blog/${post.id}`} sx={{ '&:hover': { backgroundColor: '#f0f0f0' } }}>
+            <ListItem
+              component="a"
+              href={post.externalLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              sx={{ '&:hover': { backgroundColor: '#f0f0f0' } }}
+            >
               <ListItemText
                 primary={post.title}
                 secondary={post.date}

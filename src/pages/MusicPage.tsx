@@ -57,28 +57,32 @@ const MusicPage: React.FC = () => {
       <Typography variant="h2" component="h1" gutterBottom>
         Music
       </Typography>
-      <Box sx={{ mb: 3 }}>
+      <Box sx={{ mb: 3, display: 'flex', flexWrap: 'wrap' }}>
         <Button
           variant={selectedCategory === 'free_bgm' ? 'contained' : 'outlined'}
           onClick={() => setSelectedCategory('free_bgm')}
-          sx={{ mr: 1 }}
+          sx={{ mr: 1, mb: 1, minWidth: '180px' }}
         >
           フリーBGM/作業用BGM
         </Button>
         <Button
           variant={selectedCategory === 'original_song' ? 'contained' : 'outlined'}
           onClick={() => setSelectedCategory('original_song')}
-          sx={{ mr: 1 }}
+          sx={{ mr: 1, mb: 1, minWidth: '180px' }}
         >
           オリジナル楽曲
         </Button>
         <Button
           variant={selectedCategory === 'all' ? 'contained' : 'outlined'}
           onClick={() => setSelectedCategory('all')}
+          sx={{ mr: 1, mb: 1, minWidth: '180px' }}
         >
           すべて
         </Button>
       </Box>
+      <Typography variant="body2" color="text.secondary" sx={{ mb: 1 }}>
+        タグで絞り込みができます
+      </Typography>
       <Box sx={{ mb: 3 }}>
         {allTags.map((tag) => (
           <Chip

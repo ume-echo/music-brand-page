@@ -4,6 +4,7 @@ export interface BlogPost {
   title: string;
   image: string;
   content: string[];
+  externalLink?: string;
 }
 
 export interface MusicTrack {
