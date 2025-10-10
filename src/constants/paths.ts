@@ -19,7 +19,7 @@ export const IMAGE_PATHS = {
 };
 
 export const AUDIO_PATHS = {
-  RAINY: `${PUBLIC_URL}/rainy.mp3`,
+  RAINY: `${PUBLIC_URL}/rainy編曲ver.mp3`,
   NYUDOGUMO: `${PUBLIC_URL}/入道雲.mp3`,
   KAKURITSU: `${PUBLIC_URL}/確率.mp3`,
   NEKO_NO_HITOMI: `${PUBLIC_URL}/猫の瞳.mp3`,
